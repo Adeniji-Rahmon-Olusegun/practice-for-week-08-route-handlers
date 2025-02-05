@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit dog</title>
+</head>
+<body>
+    <form method="POST" action="localhost:5000/dogs/${id}/update">
+        <h2>Edit dog to your taste</h2>
+
+        <p>
+            <label>Name: <input type="text" name="name" value=`${dogAndIds[id].name}`></label>
+        </p>
+
+        <p>
+            <label>Age: <input type="text" name="age" value=`${dogAndIds[id].age}`></label>
+        </p>
+
+        <p>
+            <button type="submit">Update</button>
+        </p>
+    </form>
+</body>
+</html>
